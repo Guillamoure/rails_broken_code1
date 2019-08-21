@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   /* background-color: red; */
+   background-image: url("https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/chilis-restaurant-1479132447.jpg");
+   position: absolute;
+ }
+
+ .chili {
+   color: red;
+   margin-left: 1.5em;
+   text-shadow: 1px 1px #800000;
+ }
+
+ .center {
+   text-align: center;
+   font-size: 2em;
+ }
+
+ .customer a {
+   color: white;
+   text-decoration: none;
+   margin-left: 2em;
+   font-size: 20px;
+ }
+
+ .customer a:hover {
+   text-shadow: 3px 3px #800000;
+ }
+
+ .meal a{
+   color: gold;
+   text-decoration: none;
+   margin-left: 2em;
+   font-size: 20px;
+ }
+
+ .meal a:hover {
+   text-shadow: 3px 3px #800000;
+ }
+
+ .link a {
+   color: skyblue;
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: bold;
+   margin-left: 1em;
+ }
+
+ .pop {
+   color: red;
+   text-shadow: 1px 1px white;
+   font-size: 24px;
+ }
+
+ #meals {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ .customer-meal {
+   margin: 10px;
+ }
+
+ .form {
+   color: white;
+   text-shadow: 1px 1px #800000;
+   font-size: 1.5em;
+   display: flex;
+   align-content: center;
+
+ }
+
+ input[type="submit"] {
+   background: transparent;
+   color: gold;
+   border-radius: 1em;
+ }
+
+ input[type="submit"]:hover {
+   color: #800000;
+   background: white;
+ }
+
+ select {
+   background: transparent;
+   color: gold;
+   border-radius: 1em;
+ }
+
+ select:hover {
+   background: white;
+   color: #800000;
+   border-radius: 1em;
+ }

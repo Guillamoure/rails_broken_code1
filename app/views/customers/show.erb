@@ -1,0 +1,23 @@
+<h2 class="chili">Customer <%= @customer.name %></h2>
+
+<h3 class="chili">Money Spent: $<%= @customer.money_spent %></h3>
+<h3 class="chili">Calories Consumed: <%= @customer.calories_consumed %></h3>
+
+
+<h3 class="chili center">All Orders</h3>
+
+<div id="meals">
+<% @customer.meals.each do |meal|%>
+  <span class="customer-meal">
+  <h4 class="pop"><%= meal.name %></h4>
+  <li class="pop">Calorie Count: <%= meal.calories %></li>
+  <li class="pop">$<%= meal.price %></li>
+  </span>
+<% end %>
+</div>
+
+<p class="link"><%= link_to "Make a new Order", new_customer_meal_path %></p>
+
+<p class="link"><%= link_to "All Customers", customers_path %></p>
+
+<div><img src="https://images-na.ssl-images-amazon.com/images/I/31jLG5MvZ%2BL.jpg" alt="Hi" ></div>

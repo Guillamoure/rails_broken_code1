@@ -1,0 +1,7 @@
+<h1 class="chili">Menu Items</h1>
+
+<% @meals.each do |meal| %>
+  <div class="meal"><%= link_to meal.name, meal%></div>
+<% end %>
+
+<p class="link"><%= link_to "Create Meal", new_meal_path %></p>
