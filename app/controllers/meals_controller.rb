@@ -8,10 +8,6 @@ class MealsController < ApplicationController
     @meal = Meal.find(params[:id])
   end
 
-  def new
-    @meal = Meal.new
-  end
-
   def create
     @meal = Meal.create(meal_params)
     redirect_to meals_path
