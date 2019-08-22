@@ -1,17 +1,17 @@
 <div class="form">
-  <%= form_for @meal do |m| %>
-  <%= m.label :name %>
-  <%= m.text_field :name %>
-  <br/><br/>
+  <%= form_for: @meal do |m| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br/><br/>
 
-  <%= m.label :price %>
-  <%= m.number_field :price, step: 0.01 %>
-  <br/><br/>
+    <%= f.label :price %>
+    <%= m.number_field :price, step: 0.01 %>
+    <br/><br/>
 
-  <%= m.label :calories %>
-  <%= m.number_field :calories %>
-  <br/><br/>
+    <% m.label :calories %>
+    <% m.number_field :calories %>
+    <br/><br/>
 
-  <%= m.submit %>
-<% end %>
+    <%= m.submit %>
+  <%= end %>
 </div>

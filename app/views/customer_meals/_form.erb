@@ -1,10 +1,10 @@
 <div class="form">
-<%= form_for @customer_meal do |cm| %>
+<%= form_for @customermeal do |f| %>
   <%= cm.label :customer_id %>
-  <%= cm.collection_select :customer_id, @customers, :id, :name %>
+  <%= cm.collection_select :customer_id, :id, @customers,:name %>
   <br/><br/>
-  <%= cm.label :meal_id %>
-  <%= cm.collection_select :meal_id, @meals, :id, :name %>
+  <%= cm.label :meals %>
+  <%= cm.collection_select :meals, @meals, :id, :name %>
 
   <br/><br/>
   <%= cm.submit %>
